@@ -12,28 +12,17 @@ npm or yarn
 MongoDB (local or cloud Atlas instance)
 Installation
 Clone the repository:
-bash
-Copy
-Edit
 git clone https://github.com/your-username/express-mongodb-order-system.git
 cd express-mongodb-order-system
 Install dependencies:
-bash
-Copy
-Edit
 npm install
 Update MongoDB connection string in index.js (or set an environment variable if desired):
 js
-Copy
-Edit
 mongoose.connect("mongodb+srv://<username>:<password>@cluster0.mongodb.net", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
 Start the server:
-bash
-Copy
-Edit
 npm start
 (By default, it runs on http://localhost:3000.)
 Usage
@@ -51,9 +40,7 @@ DELETE /orders/:id (delete)
 API Documentation
 Swagger is used for API documentation. Once the server is running, navigate to:
 
-bash
-Copy
-Edit
+
 http://localhost:3000/api-docs
 You’ll see interactive documentation allowing you to explore and test each endpoint.
 
@@ -73,8 +60,6 @@ Create an Order
 POST /orders
 JSON body:
 json
-Copy
-Edit
 {
   "customerId": "<insert valid customer _id>",
   "items": [
@@ -98,8 +83,6 @@ If you want to automate tests, you can create a Postman collection with test scr
 
 Project Structure
 plaintext
-Copy
-Edit
 express-mongodb-api/
 ├── models/
 │   ├── customer.js        # Mongoose schema for Customer
