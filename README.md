@@ -78,21 +78,3 @@ Submit Payment (with simulated delay)
 
 POST /orders/<orderId>/payment
 Check the server responses and verify your database updates in MongoDB.
-
-If you want to automate tests, you can create a Postman collection with test scripts or use Jest / Mocha to run automated tests in Node.
-
-Project Structure
-plaintext
-express-mongodb-api/
-├── models/
-│   ├── customer.js        # Mongoose schema for Customer
-│   ├── item.js            # Mongoose schema for Item
-│   └── orders.js          # Mongoose schema for Order
-├── routes/
-│   ├── customer.js        # Express routes for Customer
-│   ├── items.js           # Express routes for Items
-│   └── orders.js          # Express routes for Orders
-├── app.js                 # Express app + Swagger setup
-├── index.js               # Connects to DB, sets up routes, starts server
-├── package.json
-└── README.md
